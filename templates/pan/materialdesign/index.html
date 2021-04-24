@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Index of {{ .Path }}</title>
+		<title>小心网盘{{ .Path }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="/static/img/favicon-{{.Mode}}.ico" type="image/x-icon" />
@@ -55,7 +55,7 @@
 		<script>
 			promptPwd("{{ .FileId}}");
 			function promptPwd(fileId){
-				var pwd = prompt("这是一个受保护的文件夹，您需要提供访问密码才能查看。");
+				var pwd = prompt("微信公众号:心科技，回复关键词“口令”获取访问密码");
 				$.cookie("dir_pwd", pwd);
 				location.reload();
 			}
@@ -115,7 +115,7 @@
 				</div>
 				<div class="col s12 footer">
 					<div class="center-align">
-						<span>Powered by <a href="https://github.com/libsgh/PanIndex" target="_blank">PanIndex</a> | Themes by <a href="https://github.com/kasuganosoras">Akkariin</a></span>
+						<span>Powered by <a href="https://pan.g0f.cn" target="_blank">小心网盘</a> | Themes by <a href="https://blog.g0f.cn">果粉博客</a></span>
 					</div>
 				</div>
 			</div>
