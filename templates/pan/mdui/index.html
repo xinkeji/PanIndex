@@ -63,7 +63,7 @@
 			 white-space: normal;
 		 }
 	</style>
-	<title>Index of {{ .Path }}</title>
+	<title>小心网盘 {{ .Path }}</title>
 	{{ $SurportFolderDown := .SurportFolderDown }}
 </head>
 <body>
@@ -72,7 +72,7 @@
 <script>
 	promptPwd("{{ .FileId}}");
 	function promptPwd(fileId){
-		mdui.prompt('这是一个受保护的文件夹，您需要提供访问密码才能查看。', "<i class=\"mdui-icon material-icons\">lock_outline</i>",
+		mdui.prompt('微信公众号:心科技，回复关键词“口令”获取访问密码', "<i class=\"mdui-icon material-icons\">lock_outline</i>",
 				function (value) {
 					$.cookie("dir_pwd", value);
 					location.reload();
@@ -193,7 +193,7 @@
 		{{else}}
 		{{end}}
 		<div class="mdui-text-center mdui-typo">
-			©2021 <a href="https://github.com/libsgh/PanIndex" target="_blank">PanIndex</a>. All rights reserved.
+			<span>Powered by <a href="https://pan.g0f.cn" target="_blank">小心网盘</a> |  <a href="https://blog.g0f.cn">果粉博客</a></span>
 		</div>
 	</div>
 </div>
